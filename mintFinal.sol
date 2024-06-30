@@ -3,7 +3,7 @@ pragma solidity ^0.8.25;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-contract DNDCoin is ERC20 {
+contract Baingan is ERC20 {
     address public owner;
 
     // For demonstration purposes
