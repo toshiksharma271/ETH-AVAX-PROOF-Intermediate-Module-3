@@ -8,66 +8,30 @@ Baingan is an ERC20 token built using OpenZeppelin's ERC20 standard. This smart 
 
 ## Getting Started
 
-  
 ### Installing
 
-* Clone the repository:
-  ```sh
-  git clone https://github.com/toshiksharma271/ETH-AVAX-PROOF-Intermediate-Module-3.git
-  ```
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/.
 
-* Run
-  mintToken File
-  
-* Ensure you have the necessary dependencies:
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar.
 
-  ```sh
-  npm install
-  ```
-* Install Hardhat for smart contract deployment and testing:
-  
-
-  ```sh
-  npm install --save-dev hardhat
-  ```
 ### Executing program
 
-* Compile the smart contract:
-
-
-  ```sh
-  npx hardhat compile
-  ```
-* Deploy the smart contract:
+* Compile the program by pressing (ctrl + s) or click the compile button from the top left side of the screen.
   
+* Deploy the smart contract under the Deploy & Run Transactions tab by setting an initial value.
 
-  ```solidoty
-  npx hardhat run scripts/deploy.js --network <network-name>
-  Replace <network-name> with the desired network (e.g., localhost, rinkeby, etc.).
-  ```
-
-Help
-For common issues and problems:
-
-Ensure all dependencies are installed:
-
-  ```sh
-  npm install
-  ```
-* Check Hardhat configuration in hardhat.config.js.
-
-For further assistance, use the Hardhat help command:
-
-```sh
-npx hardhat help
-```
 
 ## Authors
-Contributors names and contact info
 
 Toshik Sharma
 
 [LinkedIn](https://www.linkedin.com/in/toshik-sharma-855070250/)
+
+Chandigarh University
+
+BE-CSE
+
+toshiksharma45@gmail.com
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
