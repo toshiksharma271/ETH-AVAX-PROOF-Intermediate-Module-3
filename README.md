@@ -8,6 +8,7 @@ Baingan is an ERC20 token built using OpenZeppelin's ERC20 standard. This smart 
 
 ## Getting Started
 
+  
 ### Installing
 
 * Clone the repository:
@@ -29,7 +30,8 @@ Baingan is an ERC20 token built using OpenZeppelin's ERC20 standard. This smart 
   ```sh
   npm install --save-dev hardhat
   ```
-* Executing program
+### Executing program
+
 * Compile the smart contract:
 
 
