@@ -13,12 +13,12 @@ Baingan is an ERC20 token built using OpenZeppelin's ERC20 standard. This smart 
 
 * Clone the repository:
   ```sh
-  git clone https://github.com/toshiksharma271/baingan-token.git
+  git clone https://github.com/toshiksharma271/ETH-AVAX-PROOF-Intermediate-Module-3.git
   ```
 
-  ```sh
-  cd baingan-token
-  ```
+* Run
+  mintToken File
+  
 * Ensure you have the necessary dependencies:
 
   ```sh
