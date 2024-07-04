@@ -13,7 +13,7 @@ Baingan is an ERC20 token built using OpenZeppelin's ERC20 standard. This smart 
 
 * Clone the repository:
   ```sh
-  git clone https://github.com/your-username/baingan-token.git
+  git clone https://github.com/toshiksharma271/baingan-token.git
   ```
 
   ```sh
