@@ -50,7 +50,6 @@ contract Baingan is ERC20 {
     }
 
     function transfer(address to, uint256 value) public override returns (bool) {
-        // Please use the function transfer as required by the project instructions. Make sure to check the involved address balance
         _transfer(msg.sender, to, value);
         return true;
     }
