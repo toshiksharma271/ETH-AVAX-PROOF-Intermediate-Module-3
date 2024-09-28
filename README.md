@@ -20,28 +20,44 @@ Once you are on the Remix website, create a new file by right-clicking clicking 
 ```javascript
 
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.25;
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.0.0/contracts/token/ERC20/ERC20.sol";
+contract Baingan is ERC20 {
+    address public owner;
 
-contract MyToken is ERC20 {
+    // For demonstration purposes
+    uint256 public constant MAX_SUPPLY = 100000; // Max supply set to 100000
 
-    constructor() ERC20("CATTO", "CTO") {
-        _mint(msg.sender, 1000000 * 10 ** uint256(decimals()));
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only the owner is allowed to initiate this function");
+        _;
     }
 
-    function mintTokens(address to, uint256 amount) public {
-        _mint(to, amount);
+    modifier validateMint(uint256 value) {
+        require(totalSupply() + value <= MAX_SUPPLY, "Exceeds maximum supply");
+        _;
     }
 
-    function transferTokens(address to, uint256 amount) public {
-        transfer(to, amount);
+    constructor(uint256 initialSupply) ERC20("Baingan", "BG") {
+        _mint(msg.sender, initialSupply);
+        owner = msg.sender;
     }
 
-    function burnTokens(uint256 amount) public {
-        _burn(msg.sender, amount);
+    function mint(address to, uint256 value) external onlyOwner validateMint(value) {
+        _mint(to, value);
     }
-    
+
+    function transfer(address to, uint256 value) public override returns (bool) {
+        // Please use the function transfer as required by the project instructions. Make sure to check the involved address balance
+        _transfer(msg.sender, to, value);
+        return true;
+    }
+
+    function burn(address from, uint256 value) external {
+        _burn(from, value);
+    }
 }
 
 
